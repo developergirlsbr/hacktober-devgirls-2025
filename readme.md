@@ -4,6 +4,7 @@ O **Hacktoberfest** é o evento anual da DigitalOcean que incentiva pessoas de t
 
 Grande parte da tecnologia que usamos diariamente depende de projetos de código aberto mantidos por pessoas apaixonadas — muitas vezes, sem equipe ou orçamento. O Hacktoberfest existe para **retribuir**, **aprimorar habilidades** e **celebrar a comunidade que torna tudo isso possível**.  
 
+💜 Desafios criados pela Embaixadora do Developer Girls **[Jannaina Sangaletti!](https://github.com/jnnastti)**
 ---
 
 ## 👩‍💻 Todos são bem-vindos!
