@@ -1,0 +1,20 @@
+[
+    {
+        "cidade": "São Paulo",
+        "temperatura": "22°C",
+        "condicao": "Ensolarado",
+        "icone": "☀️"
+    },
+    {
+        "cidade": "Rio de Janeiro",
+        "temperatura": "28°C",
+        "condicao": "Parcialmente Nublado",
+        "icone": "⛅"
+    },
+    {
+        "cidade": "Porto Alegre",
+        "temperatura": "18°C",
+        "condicao": "Chuva",
+        "icone": "🌧️"
+    }
+]
