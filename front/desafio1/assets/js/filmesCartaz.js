@@ -1,7 +1,7 @@
 const FilmesCartaz = [
     {
         Id: 1,
-        Nome: 'Fátima - A História de Um Milagre',
+        Nome: 'Fatima - A Historia de Um Milagre',
         Imagem: './assets/img/fatima.jpg',
         Trailer: '',
         Legendado: true,
@@ -31,7 +31,7 @@ const FilmesCartaz = [
     },
     {
         Id: 4,
-        Nome: 'Ainbo - A Guerreira da Amazônia',
+        Nome: 'Ainbo - A Guerreira da Amazonia',
         Imagem: './assets/img/ainbo.png',
         Trailer: '',
         Legendado: false,
@@ -61,7 +61,7 @@ const FilmesCartaz = [
     },
     {
         Id: 7,
-        Nome: 'Shang-Chi e a Lenda dos Dez Anéis',
+        Nome: 'Shang-Chi e a Lenda dos Dez Aneis',
         Imagem: './assets/img/shang.jpg',
         Trailer: '',
         Legendado: true,
@@ -71,7 +71,7 @@ const FilmesCartaz = [
     },
     {
         Id: 8,
-        Nome: 'O Poderoso Chefinho 2: Negócios da Família',
+        Nome: 'O Poderoso Chefinho 2: Negocios da Familia',
         Imagem: './assets/img/chefinho.jpg',
         Trailer: '',
         Legendado: true,

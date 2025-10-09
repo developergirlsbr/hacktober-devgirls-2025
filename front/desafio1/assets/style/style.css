@@ -1,0 +1,218 @@
+body {
+    background: #f5f1ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f0e1d2;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #f0e1d2;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s ease;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #000;
+}
+
+#home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30%;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 160;
+    text-align: center;
+    margin-bottom: -200px;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.circle-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 550px;
+}
+
+.rotate {
+    transform-origin: center center;
+    animation: rotate 40s linear infinite;
+    /* rotação suave */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    color: #000;
+    padding: 125px;
+    border: 1px solid #c6c2be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -999;
+}
+
+.film {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transform-origin: center center;
+    cursor: pointer;
+}
+
+.film svg {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -35px;
+    left: -35px;
+    pointer-events: none;
+}
+
+.film text {
+    font-size: 11px;
+    fill: #000;
+    letter-spacing: 1px;
+}
+
+hr {
+    margin: 50px 0px;
+}
+
+h2,
+h3 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#lista {
+    margin: 20px 0px;
+}
+
+#lista .item {
+    background-color: #f0e1d2;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px 0px;
+    box-shadow: #6d6863 4px 5px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#lista .item img {
+    width: 240px;
+    height: 240px;
+    margin: -20px 20px -20px 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+footer {
+    background-color: #f0e1d2;
+    width: 100%;
+    margin: 20px 0px -20px 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal {
+  display: none; /* escondido por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #f5f1ee;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
