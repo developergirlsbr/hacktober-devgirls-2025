@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <link href="./assets/style/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="icon" href="./assets/img/logo.ico" type="image/svg" />
+
+    <meta charset="utf-8">
+    <meta name="author" content="Jannaina">
+    <meta name="description" content="Cine app - desafio 1">
+    <meta name="keywords" content="Cinema, catalogo, Filme">
+
+    <meta id="viewport" name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title> CineJanna | Home </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3>CineJanna</h3>
+            <ul>
+                <li><a href="#" onclick="scrollToElemen('home'); return false;">Home</a></li>
+                <li><a href="#" onclick="scrollToElemen('listaFilmes'); return false;">Catalogo</a></li>
+            </ul>
+            <img src="./assets/img/logo.png">
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Festival<br>De Filmes</h1>
+        </section>
+
+        <section class="circle-container" id="circle-container">
+            <div class="center-circle">
+                <h2>Melhores<br>Filmes</h2>
+            </div>
+        </section>
+
+        <hr />
+        <section id="listaFilmes" class="grid">
+            <h2>Catalogo</h2>
+
+            <div id="lista">
+
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-nome"></h2>
+                <img id="modal-imagem" src="" alt="">
+                <p><strong>Classificação:</strong> <span id="modal-classificacao"></span></p>
+                <p id="modal-descricao"></p>
+                <p><strong>Legendado:</strong> <span id="modal-legendado"></span></p>
+                <p><strong>Dublado:</strong> <span id="modal-dublado"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> by: @jnnastti</p>
+    </footer>
+
+</body>
+
+<script src="./assets/js/melhoresFilmes.js"></script>
+<script src="./assets/js/filmesCartaz.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
