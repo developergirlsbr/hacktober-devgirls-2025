@@ -1,0 +1,24 @@
+{
+  "name": "desafio1",
+  "version": "1.0.0",
+  "description": "💜 Desafios criados pela Embaixadora do Developer Girls **[Jannaina Sangaletti!](https://github.com/jnnastti)**",
+  "homepage": "https://github.com/jnnastti/hacktober-devgirls-2025#readme",
+  "bugs": {
+    "url": "https://github.com/jnnastti/hacktober-devgirls-2025/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnnastti/hacktober-devgirls-2025.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  }
+}
