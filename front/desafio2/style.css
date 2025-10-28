@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+input {
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    width: 240px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ff4e50;
+    box-shadow: 0 0 5px rgba(255, 78, 80, 0.4);
+}
+
+button {
+    background: #ff4e50;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #ff6a6a;
+    transform: scale(1.05);
+}
+
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+.pokemon-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pokemon-card img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.pokemon-card img:hover {
+    transform: scale(1.1);
+}
+
+.pokemon-name {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.type {
+    padding: 4px 10px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+.error,
+.loading {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.error {
+    color: #c0392b;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.loading {
+    color: #444;
+    font-size: 18px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.load-more {
+    display: block;
+    margin: 30px auto 0;
+    background: #2a75bb;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.load-more:hover {
+    background: #3b8edc;
+}
